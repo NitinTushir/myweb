@@ -1,9 +1,12 @@
 <html>
-<body>
-<h2>Hello World!</h2>
-
-<h1>Nitin Tushir</h1>
-<h1>NYC</h1>
-<h2>Hello World!</h2>
-</body>
+    <head>
+        <title>Enter two numbers to add up</title>
+    </head>
+    
+    <body>
+            First number: <input type="text" name="t1"/>
+            Second number: <input type="text" name="t2"/>
+            <input type="submit" value="SUBMIT" />
+        </form>
+    </body>
 </html>
