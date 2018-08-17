@@ -1,21 +1,19 @@
 <html>
-    <head>
-        <title>Enter two numbers to add up</title>
-    </head>
-    
-    <body>
-            First number: <input type="text" name="t1"/>
-            Second number: <input type="text" name="t2"/>
-            <input type="submit" value="SUBMIT" />
-        </form>
-        Sum of numbser <br>
-
-<%
-int x,y;
-x=Integer.parseInt(request.getParameter(“no1”));
-y=Integer.parseInt(request.getParameter(“no2”));
-out.print(x+y);
-
-%>
-    </body>
+<head>
+<script>
+function add(){
+var a,b,c;
+a=Number(document.getElementById("first").value);
+b=Number(document.getElementById("second").value);
+c= a + b;
+document.getElementById("answer").value= c;
+}
+</script>
+</head>
+<body>
+Enter the First number : <input id="first">
+Enter the Second number: <input id="second">
+<button onclick="add()">Add</button>
+<input id="answer">
+</body>
 </html>
